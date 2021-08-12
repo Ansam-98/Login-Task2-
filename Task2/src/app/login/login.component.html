@@ -1,0 +1,52 @@
+
+    <div class="container-fluid company ">
+      <div class="row">
+<section class="bgimg col-lg-6 col-md-6 col-sm-12">
+    <form class="form-group container1">
+  <p style="font-size: 20px;margin-bottom: 40px;">Sign in</p>
+     <label>Email</label>
+  <div class="input-icons"><i class='bx bx-user icon' style='color:#31bbfd'  ></i>
+    <input [(ngModel)]="email" name="email" type="email"  class="form-control rounded-2 input1" placeholder=" Email Address" required></div>
+    
+      <br>
+      <label>Password</label>
+      <div class="input-icons">
+      <i class='bx bx-lock-alt icon' style='color:#31bbfd'  ></i>
+      <input [(ngModel)]="password" name="password" type="password" class="form-control rounded-2 input1" placeholder="Password" required>
+  </div><br>
+  
+  <div >
+      <button (click)="get_users()"  type="button" class="btn  form-control btn1" routerLink="/login" routerLinkActive="active" name="post-user"> Proceed </button>
+     
+      <div class="row">
+  
+        <div class="clo-lg-6"><a href="" style="color: gray;margin-top: 10px;display: block;">Forget Password?</a></div>
+        </div>
+   <div class="row" style="margin-left: 100px;">  <a  routerLink='/map' routerLinkActive="active" name="map">Map</a></div>
+     
+
+
+   
+ </div>
+
+    
+</form></section>
+<div class="bgimg2 col-lg-6">
+<div class="col-lg-10 col-md-6 ">
+  <div class="divcenter">
+ <h1 style="color: white;"><b>Install, Configure, & Deploy
+  Applications & Services</b></h1>
+<div style="color: white;">
+  Accelerate innovation, scale with confidence, and
+add agility with cloud-based telecommunications
+solutions from RUSDN Web Services
+</div>
+</div>
+</div></div>
+</div>
+  </div>
+  
+
+  
+    <router-outlet></router-outlet>
+  

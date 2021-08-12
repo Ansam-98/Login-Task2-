@@ -1,0 +1,51 @@
+<nav class="navbar m-3">
+    <div class="input-icons">
+    <input class="form-control input1" style="width: 400px;"  type="text" name="solutiontype" [(ngModel)]="solutiontype" (ngModelChange)="Search()" 
+    placeholder="Enter SolutionType to search"></div>
+</nav>
+<div class="row">
+    <div class="col-lg-12">
+<table class=" table table-borderd">
+   
+    <thead>
+        <tr>
+             <th></th>
+             <th>Status</th>
+             <th>Solution Name</th>
+             <th>Solution Type</th>
+             <th>Solution ID</th>
+             <th>City</th>
+             <th>Description</th>
+             <th>Created By</th>
+             <th>Version</th>
+             <th>Time</th>
+
+            <th></th>
+
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let device of devices ">
+            <td><input type="checkbox"></td>
+            
+            <td>{{device.status}}</td>
+            <td>{{device.solutionname}}</td>
+            <td>{{device.solutiontype}}</td>
+            <td>{{device.solutoinid}}</td>
+            <td>{{device.city}}</td>
+            <td>{{device.description}}</td>
+            <td>{{device.createdby}}</td>
+            <td>{{device.version}}</td>
+           <td>{{device.Time}}</td>
+
+           
+            <td><button type="button" class="btn "><i class='bx bx-dots-vertical-rounded'></i></button></td>
+    
+            
+            
+            
+        </tr>
+    </tbody>
+    
+    </table></div></div>
